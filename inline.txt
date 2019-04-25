@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+grid-template-rows: auto auto auto;
+  //grid-auto-rows: auto;
+  //grid-gap: 10px;
+  grid-template-areas:
+  " one two three "
+  " four two three "
+  " five six seven ";
+
+}
+
+.grid div: nth-child(odd) {
+//background-color: black;
+}
+
+.grid div: nth-child(even) {
+  //background-color: black;
+}
